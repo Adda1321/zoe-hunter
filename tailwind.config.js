@@ -1,0 +1,116 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      letterSpacing: {
+        0: '0px',
+        1: '1px',
+        2: '2px',
+        3: '3px',
+        4: '4px',
+        5: '5px',
+        6: '6px',
+        7: '7px',
+        8: '8px',
+        "04": '0.4px',
+        "btn-1": '-0.54px',
+        "5-m": '-5px',
+        "4-m": '-4px',
+        "3-m": '-3px',
+        "2-m": '-2px',
+        "1-m": '-1px',
+        "foot-title": '-0.32px',
+        "foot-text": '-0.16px',
+        3: '-.025em'
+      },
+      fontFamily: {
+        // main: ['Avenir', 'sans-serif'],
+        primary: "var(--font-avenir-main)",
+        main: "var(--font-main)",
+        sec: "var(--font-hallenger)",
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+      },
+      gridColumn: {
+        'span-24': 'span 24 / span 24',
+        'span-23': 'span 23 / span 23',
+        'span-22': 'span 22 / span 22',
+        'span-21': 'span 21 / span 21',
+        'span-20': 'span 20 / span 20',
+        'span-19': 'span 19 / span 19',
+        'span-18': 'span 18 / span 18',
+        'span-17': 'span 17 / span 17',
+        'span-16': 'span 16 / span 16',
+        'span-15': 'span 15 / span 15',
+        'span-14': 'span 14 / span 14',
+        'span-13': 'span 13 / span 13',
+      },
+      gridTemplateColumns: {
+        '24': 'repeat(24, minmax(0, 1fr))',
+        '23': 'repeat(23, minmax(0, 1fr))',
+        '22': 'repeat(22, minmax(0, 1fr))',
+        '21': 'repeat(21, minmax(0, 1fr))',
+        '20': 'repeat(20, minmax(0, 1fr))',
+        '19': 'repeat(19, minmax(0, 1fr))',
+        '18': 'repeat(18, minmax(0, 1fr))',
+        '17': 'repeat(17, minmax(0, 1fr))',
+        '16': 'repeat(16, minmax(0, 1fr))',
+        '15': 'repeat(15, minmax(0, 1fr))',
+        '14': 'repeat(14, minmax(0, 1fr))',
+        '13': 'repeat(13, minmax(0, 1fr))',
+      },
+      colors: {
+        primary: "#2B3F49",
+        body: "#21292E",
+        "body-light": "#2B3F49",
+        "body-dark": "#132128",
+        "section-100": "#E8ECEE",
+        "section-300": "#CDD5D8",
+        main: {
+          '50': '#edf3f5',
+          '100': '#dfe8eb',
+          '200': '#afc4c9',
+          '300': '#85a0a8',
+          '400': '#425e69',
+          '500': '#132128',
+          '600': '#0f1c24',
+          '700': '#0b161f',
+          '800': '#07111a',
+          '900': '#040b12',
+          '950': '#02070d'
+        },
+        sec: {
+          50: "#EBEEEF",
+          100: "#DADFE1",
+          200: "#B6BFC4",
+          300: "#919EA6",
+          400: "#6D7E87",
+          500: "#4F5B62",
+          600: "#40494F",
+          700: "#30373B",
+          800: "#202528",
+          900: "#101214",
+          950: "#070808"
+        }
+      },
+      borderRadius: {
+        '4xl': '2.0rem'
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+    },
+  },
+  plugins: [],
+}

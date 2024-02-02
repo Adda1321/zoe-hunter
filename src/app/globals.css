@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Avenir (Common Name) */
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir-Black.ttf") format("truetype");
+  font-weight: 900; /* Black */
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir-Book.ttf") format("truetype");
+  font-weight: 400; /* Book */
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir-Heavy.ttf") format("truetype");
+  font-weight: 800; /* Heavy */
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir-Light.ttf") format("truetype");
+  font-weight: 300; /* Light */
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/fonts/Avenir-Roman.ttf") format("truetype");
+  font-weight: 400; /* Roman */
+}
+
+@font-face {
+  font-family: "hallenger";
+  src: url("/fonts/hallenger/HallengerSerifFont.otf") format("otf");
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  --font-main: "Avenir", sans-serif;
+  --font-avenir-main: "Avenir", sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  letter-spacing: -0.48px;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .breadcrumb {
+    @apply text-yellow-400 text-xs md:text-sm lg:text-base xl:text-base text-center font-semibold capitalize mb-3;
+  }
+
+  .home-hero-sub-title {
+    @apply text-yellow-400 text-base md:text-base lg:text-xl xl:text-xl text-center font-semibold capitalize tracking-8 leading-tight mb-3;
+  }
+
+  .home-hero-title {
+    @apply text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center font-semibold capitalize tracking-3-m leading-tight;
+  }
+
+  .hero-sub-title {
+    @apply text-yellow-400 text-base md:text-base lg:text-xl xl:text-xl text-center font-semibold capitalize tracking-8 leading-tight mb-3;
+  }
+
+  .hero-title {
+    @apply text-white text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-center font-semibold capitalize tracking-3-m leading-tight;
+  }
+
+  .sec-sub-title {
+    @apply text-base font-main leading-none tracking-8;
+  }
+
+  .sec-title {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl leading-7 sm:leading-8 md:leading-9 lg:leading-10 2xl:leading-10 font-black tracking-1 md:tracking-3-m font-main;
+  }
+
+  .btn-main {
+    @apply border border-main-500 text-white bg-main-500 hover:bg-main-600 font-main rounded-4xl text-sm font-normal capitalize px-6 py-4 flex gap-3 items-center hover:shadow-2xl max-w-max tracking-btn-1 transition duration-300 ease-in-out;
+  }
+
+  .btn-sec {
+    @apply border border-main-100 text-main-700 bg-main-100 hover:bg-main-200 font-main rounded-4xl text-sm font-normal capitalize px-6 lg:px-7 py-4 lg:py-5 flex gap-3 items-center hover:shadow-2xl max-w-max tracking-btn-1 transition duration-300 ease-in-out;
+  }
+
+  .btn-white {
+    @apply border border-white hover:border-main-100 text-main-700 bg-white font-main rounded-4xl text-sm font-normal capitalize px-6 lg:px-7 py-4 lg:py-5 flex gap-3 items-center hover:shadow-md max-w-max tracking-btn-1 transition duration-300 ease-in-out;
+  }
+
+  .container-main {
+    @apply container mx-auto px-5 md:px-12 lg:px-16 xl:px-20;
+  }
+}
+
+.btn-svg:hover svg {
+  filter: brightness(20);
+}
+
+.slick-dots li button {
+  width: 27px !important;
+}
+
+.slick-dots li button:before {
+  opacity: 1 !important;
+  width: 27px !important;
+  height: 5px !important;
+  border-radius: 3px !important;
+  background: #9babb1 !important;
+  color: transparent !important;
+}
+.slick-dots li.slick-active button:before {
+  background: #132128 !important;
+}
