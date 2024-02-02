@@ -1,17 +1,15 @@
 "use client";
 import { Menu, Transition } from "@headlessui/react";
-import { useTranslation } from 'next-i18next';
 import { Fragment, useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { getDictionary } from "../[lang]/dictionaries";
 
 // import languages from "../data/languages";
 import { languages } from "../languages";
 
-const Header = async () => {
+const Header =  () => {
 
 	
-	const dict = await getDictionary(lang) // en
+	
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -123,7 +121,7 @@ const Header = async () => {
 										href="#"
 										className="block px-8 py-3 font-medium leading-none border border-gray-600 md:py-4 font-main text-primary hover:bg-main-200 rounded-3xl"
 									>
-										Login   {dict.products.cart} {t('app_title')}
+										Login   
 									</a>
 								</li>
 								<li>
