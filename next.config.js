@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
+// const lang  = sessionStorage.getItem("language");
 
-
+// const lang = localStorage.getItem("Language")
+// 
 const nextConfig = {
-    
     i18n: {
         // These are all the locales you want to support in
         // your application

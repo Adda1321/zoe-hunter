@@ -4,12 +4,12 @@ export const languages = [
         name: "English",
         icon: "/flags/english.svg",
         code: "en",
-        active: false,
+        active: true,
     },
     {
         name: "Spanish",
         icon: "/flags/spanish.svg",
         code: "es",
-        active: true,
+        active: false,
     },
 ];
